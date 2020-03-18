@@ -12,5 +12,3 @@ maxArrayValue = sort.maxSubArray(theArray)
 print(sort.maxSubArray(theArray))
 print(sort.maxSubArray(theList))
 
-UA13213
-CS286929127DE
