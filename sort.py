@@ -1,5 +1,7 @@
 #I will try to implement a couple of sort algorithm to get used to python core constructs
 
+#This is an implementation of the bubblesort algorithm
+
 def bubbleSort(anUnssortedArray) -> list:
     for lastUnsortedIndex in range(len(anUnssortedArray)-1, -1, -1):
         for j in range(lastUnsortedIndex):
@@ -8,7 +10,7 @@ def bubbleSort(anUnssortedArray) -> list:
 
     return anUnssortedArray
 
-
+#This is an implementation of the selectionsort algorithm
 
 def selectionSort(anUnssortedArray) -> list:
     for lastUnsortedIndex in range(len(anUnssortedArray)-1, -1, -1):
@@ -21,7 +23,7 @@ def selectionSort(anUnssortedArray) -> list:
     return anUnssortedArray
 
 
-
+#This is an implementation of the insertionsort algorithm
 
 
 def insertionSort(anUnssortedArray) -> list:
@@ -42,22 +44,7 @@ def mergeSort():
 def merge():
     pass
 
+#Swap function for some of the sort algorithms above
+
 def swap(data: list, indexI, indexJ):
     data[indexI], data[indexJ] = data[indexJ] , data[indexI]
-
-
-
-
-def maxSubArray(theArray: [int]) -> int:
-    numero = 0
-    largest = numero
-    for num in range(len(theArray)):
-        numero += theArray[num]
-        if numero < 0:
-            numero = 0
-        if numero > largest:
-            largest = numero
-        
-    return largest, numero
-
-
