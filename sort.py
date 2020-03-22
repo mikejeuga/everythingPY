@@ -1,6 +1,6 @@
 #I will try to implement a couple of sort algorithm to get used to python core constructs
 
-#This is an implementation of the bubblesort algorithm
+#This is an implementation of the bubblesort algorithm.
 
 def bubbleSort(anUnssortedArray) -> list:
     for lastUnsortedIndex in range(len(anUnssortedArray)-1, -1, -1):
@@ -10,7 +10,7 @@ def bubbleSort(anUnssortedArray) -> list:
 
     return anUnssortedArray
 
-#This is an implementation of the selectionsort algorithm
+#This is an implementation of the selectionsort algorithm.
 
 def selectionSort(anUnssortedArray) -> list:
     for lastUnsortedIndex in range(len(anUnssortedArray)-1, -1, -1):
@@ -23,8 +23,7 @@ def selectionSort(anUnssortedArray) -> list:
     return anUnssortedArray
 
 
-#This is an implementation of the insertionsort algorithm
-
+#This is an implementation of the insertionsort algorithm.
 
 def insertionSort(anUnssortedArray) -> list:
     for firstUnorderedIndex in range(1, len(anUnssortedArray)):
@@ -38,8 +37,12 @@ def insertionSort(anUnssortedArray) -> list:
 
     return anUnssortedArray
 
+#This is an implementation of the insertionsort algorithm.
+
 def mergeSort():
     pass
+
+#merge function needed for the implementation of quicksort.
 
 def merge():
     pass
