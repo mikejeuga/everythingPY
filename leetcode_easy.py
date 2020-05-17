@@ -15,3 +15,4 @@ def maxSubArray(theArray: [int]) -> int:
             largest = numero
         
     return largest, numero
+    
