@@ -1,6 +1,6 @@
-#I will try to implement a couple of sort algorithm to get used to python core constructs
+# I will try to implement a couple of sort algorithm to get used to python core constructs
 
-#This is an implementation of the bubblesort algorithm.
+# This is an implementation of the bubbleSort algorithm.
 
 def bubble_sort(anArray: list) -> list:
     for lastUnsortedIndex in range(len(anArray)-1, -1, -1):
@@ -10,7 +10,7 @@ def bubble_sort(anArray: list) -> list:
 
     return anArray
 
-#This is an implementation of the selectionsort algorithm.
+# This is an implementation of the selectionSort algorithm.
 
 def selection_sort(anArray: list) -> list:
     for lastUnsortedIndex in range(len(anArray)-1, -1, -1):
@@ -23,7 +23,7 @@ def selection_sort(anArray: list) -> list:
     return anArray
 
 
-#This is an implementation of the insertionsort algorithm.
+# This is an implementation of the insertionSort algorithm.
 
 def insertion_sort(anArray: list) -> list:
     for firstUnorderedIndex in range(1, len(anArray)):
@@ -37,11 +37,11 @@ def insertion_sort(anArray: list) -> list:
 
     return anArray
 
-#This is an implementation of the merge_sort algorithm.
+# This is an implementation of the merge_sort algorithm.
 
 def merge_sort(arr: list)-> list: 
     if len(arr) >1: 
-        mid = len(arr)//2 #Finding the mid of the array 
+        mid = len(arr)//2 # Finding the mid of the array
         L = arr[:mid] # Dividing the array elements  
         R = arr[mid:] # into 2 halves 
   
@@ -74,10 +74,10 @@ def merge_sort(arr: list)-> list:
             return arr
     
 
-#This is an implementation of the quick_sort.
+# This is an implementation of the quick_sort.
 
 def quick_sort(anArray: list, start: int, end: int) -> int:
-    my_pivot: int = partition(anArray, start, end)
+    my_pivot: int = partition(anArray, start, end) 
 
     if my_pivot-1 > start: 
         quick_sort(anArray, start, my_pivot-1)
@@ -88,10 +88,10 @@ def quick_sort(anArray: list, start: int, end: int) -> int:
     return anArray
     
 
-#partition gets the pivot for the quicksort function.
+# partition gets the pivot for the quicksort function.
 
 def partition(data: list, start: int, end: int) -> int:
-    pivot = data[end]
+    pivot: int = data[end]
     
     for i in range(start, end, 1):  # this should be the equivalent of for(i=start; i < end; i++)
         if data[i] < pivot:
@@ -99,12 +99,11 @@ def partition(data: list, start: int, end: int) -> int:
             start += 1
         
     swap(data, start, end)
-    
 
     return start
 
 
-#Swap function for some of the sort algorithms above
+# Swap function for some of the sort algorithms above
 
 def swap(data: list, indexI, indexJ):
     data[indexI], data[indexJ] = data[indexJ] , data[indexI]
